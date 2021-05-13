@@ -12,6 +12,7 @@ public class Bowl {
         }
     }
 
+
     public void decreaseFood(int amount){
             this.foodAmount -= amount;
             System.out.printf("Bowl food amount decreased, now %d\n", this.foodAmount);

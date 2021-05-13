@@ -30,3 +30,4 @@ public class Cat_Wild extends Cats{
         return super.toString();
     }
 }
+

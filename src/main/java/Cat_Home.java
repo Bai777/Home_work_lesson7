@@ -1,6 +1,5 @@
 public class Cat_Home extends Cats{
 
-
     public Cat_Home(String name, int appetite, boolean satiety) {
         super(name, appetite, satiety);
     }

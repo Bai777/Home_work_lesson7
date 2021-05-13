@@ -30,7 +30,6 @@ public class Cats {
         this.appetite = appetite;
     }
 
-
     @Override
     public String toString() {
         return "Cat_Home{" +
