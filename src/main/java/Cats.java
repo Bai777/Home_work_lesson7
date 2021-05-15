@@ -3,18 +3,18 @@ public class Cats {
     private int appetite;
     private boolean satiety;
 
-    public Cats(String name, int appetite, boolean satiety) {
+    public Cats(String name, int appetite) {
         this.name = name;
         this.appetite = appetite;
-        this.satiety = satiety;
+        this.satiety = false;
     }
 
     public void eat(Bowl bowl){
-        if (bowl.getFoodAmount() > appetite) {
-            System.out.printf("%s eat for some food and he is full = %b\n", this.name, this.satiety = true);
-            bowl.decreaseFood(appetite);
+        if (bowl.decreaseFood(this.appetite)) {
+            System.out.printf("%s eat for some food\n", this.name);
+            this.satiety = true;
         }else {
-            System.out.printf("There is not enough food in the bowl. %s is not full = %b\n", this.name, this.satiety);
+            System.out.println("There is not enough food in the bowl.");
         }
     }
 
@@ -30,12 +30,12 @@ public class Cats {
         this.appetite = appetite;
     }
 
-
     @Override
     public String toString() {
-        return "Cat_Home{" +
+        return "Cats{" +
                 "name='" + name + '\'' +
                 ", appetite=" + appetite +
+                ", satiety=" + satiety +
                 '}';
     }
 }

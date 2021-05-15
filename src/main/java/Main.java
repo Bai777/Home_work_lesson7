@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Cats[] cats = {
-                new Cat_Home("Tom", 20, false),
-                new Cat_Wild("Bagira", 70, false),
-                new Cats("Vasia", 40, false),
-                new Cats("Pirat", 35, false),
-                new Cats("Julia", 25, false)
+                new Cat_Home("Tom", 20),
+                new Cat_Wild("Bagira", 70),
+                new Cats("Vasia", 40),
+                new Cats("Pirat", 35),
+                new Cats("Julia", 25)
         };
         Bowl bowl = new Bowl();
 
@@ -23,6 +23,9 @@ public class Main {
             cat.eat(bowl);
         }
 
+        for (Cats cat : cats) {
+            System.out.println(cat);
+        }
 
     }
 }
