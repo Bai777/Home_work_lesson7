@@ -1,8 +1,8 @@
 public class Cat_Wild extends Cats{
 
 
-    public Cat_Wild(String name, int appetite, boolean satiety) {
-        super(name, appetite, satiety);
+    public Cat_Wild(String name, int appetite) {
+        super(name, appetite);
     }
 
     @Override
